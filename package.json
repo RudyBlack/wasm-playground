@@ -1,0 +1,24 @@
+{
+  "name": "wasm-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:emscripten": "docker run --rm -v $(pwd):/src trzeci/emscripten ./build.sh",
+    "build": "npm run build:emscripten && npm run build:app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudyBlack/wasm-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RudyBlack/wasm-playground/issues"
+  },
+  "homepage": "https://github.com/RudyBlack/wasm-playground#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
