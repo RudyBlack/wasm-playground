@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:emscripten": "docker run --rm -v $(pwd):/src trzeci/emscripten ./build.sh",
-    "build": "npm run build:emscripten && npm run build:app"
+    "start": "http-server ."
   },
   "repository": {
     "type": "git",
